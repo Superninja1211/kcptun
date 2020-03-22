@@ -12,7 +12,7 @@ if [ $(id -u) != "0" ]; then
     exit 1
 fi
 shell_update(){
-    fun_clangcn "supdate"
+    fun_clangcn "clear"
     echo "+ Check updates for shell..."
     remote_shell_version=`wget --no-check-certificate -qO- ${shell_download_link} | sed -n '/'^version'/p' | cut -d\" -f2`
     if [ ! -z ${remote_shell_version} ]; then
@@ -2143,7 +2143,7 @@ case "${clang_action}" in
     update_kcptun_for_ss_ssr 2>&1 | tee ${cur_dir}/kcptun-update.log
     ;;
 *)
-    fun_clangcn "-h"
+    fun_clangcn "clear"
     echo "[${clang_action}]"
     echo "Usage: `basename $0` {install|uninstall|update|config}"
     ;;
