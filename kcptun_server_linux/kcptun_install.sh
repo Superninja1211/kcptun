@@ -35,8 +35,8 @@ shell_update(){
         fi
     fi
 }
-shell_download_link="https://raw.githubusercontent.com/Superninja1211/kcptun/master/kcptun_install.sh"
-program_version_link="https://raw.githubusercontent.com/Superninja1211/kcptun/master/version.sh"
+shell_download_link="https://raw.githubusercontent.com/Superninja1211/kcptun/master/kcptun_server_linux/kcptun_install.sh"
+program_version_link="https://raw.githubusercontent.com/Superninja1211/kcptun/master/kcptun_server_linux/version.sh"
 ss_libev_config="/etc/shadowsocks-libev/config.json"
 ssr_config="/usr/local/shadowsocksR/shadowsocksR.json"
 ssrr_config="/usr/local/shadowsocksrr/user-config.json"
